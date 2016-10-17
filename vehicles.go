@@ -651,7 +651,6 @@ func (t *SimpleChaincode) update_colour(stub *shim.ChaincodeStub, v Vehicle, cal
 //	 update_make
 //=================================================================================================================================
 func (t *SimpleChaincode) update_make(stub *shim.ChaincodeStub, v Vehicle, caller string, caller_affiliation int, new_value string) ([]byte, error) {
-	return nil, errors.New("update_make"+new_value)
 	if 		v.Status			== STATE_MANUFACTURE	&&
 			v.Owner				== caller				&& 
 			caller_affiliation	== MANUFACTURER			&&
